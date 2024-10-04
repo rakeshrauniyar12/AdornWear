@@ -1,0 +1,87 @@
+#footerContainer{
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: #E7E6E7;
+    margin-top: 30px;
+}
+#footerContainer > .footerTopInfo{
+    padding-top: 15px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#footerContainer > .footerTopInfo > div{
+    width: 30%;
+    height: 100%;
+    line-height: 30px;
+}
+#footerContainer > .footerTopInfo > div > h4{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#footerContainer > .footerTopInfo > div > ul{
+    list-style: none;
+}
+#footerContainer > .footerTopInfo > div > ul > li{
+    cursor: pointer;
+}
+#footerContainer > .footerTopInfo > div > ul > li:hover{
+    color: #901454;
+}
+#footerContainer > .footerTopInfo > div:last-child > ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+#footerDivider{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#footerContainer > .footerBottomInfo{
+    padding-left: 30px;
+}
+#footerContainer > .footerBottomInfo > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    margin-bottom: 15px;
+}
+#footerContainer > .footerBottomInfo > ul > li{
+    cursor: pointer;
+}
+#footerContainer > .footerBottomInfo > ul > li:hover{
+    color: #AF682E;
+}
+#footerContainer > .footerBottomInfo > p{
+    text-align: center;
+    font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+    #footerContainer > .footerTopInfo{
+        padding-left: 20px;
+        padding-top: 5px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #footerContainer > .footerTopInfo > div{
+        width: 100%;
+    }
+    #footerContainer > .footerTopInfo > div > h4{
+        font-weight: 600;
+        margin-bottom: 8px;
+        margin-top: 20px;
+    }
+    #footerContainer > .footerBottomInfo{
+        padding-left: 15px;
+    }
+    #footerContainer > .footerBottomInfo > p{
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,177 @@
+.homeMain {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carouselInner {
+  display: flex;
+  width: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.carouselImage {
+  min-width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.newArrivalsMain {
+  width: 96%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.newArrivalsMain > h2 {
+  font-weight: lighter;
+  color: rgb(106, 106, 106);
+  font-size: 20px;
+}
+
+.newArrivalsClothes {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10px;
+  padding-bottom: 20px;
+  margin-top: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.newArrivalsClothes::-webkit-scrollbar {
+  display: none;
+}
+
+.newArrivalsClothes > .newArrivalEachDiv {
+  width: 200px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.newArrivalEachDiv .newClotheImgDiv {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.newArrivalEachDiv .newClotheImgDiv > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.newArrivalEachDiv .newClotheInfoDiv {
+  width: 100%;
+  padding: 0 10px;
+  padding-top: 8px;
+}
+
+.newArrivalEachDiv .newClotheInfoDiv > .newClotheBrand {
+  font-size: 14px;
+  color: #8d6c33;
+  text-align: center;
+}
+
+.newArrivalEachDiv .newClotheInfoDiv > .newClotheTitle {
+  font-size: 15px;
+  font-weight: lighter;
+  color: grey;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.newArrivalEachDiv .newClotheInfoDiv > .newClothePrice {
+  color: rgb(53, 49, 49);
+  text-align: center;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.newArrivalEachDiv .newClotheInfoDiv > .newClothePrice > span {
+  font-size: 11px;
+  color: rgb(157, 155, 155);
+}
+.movingMessageDiv {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 10px 0;
+  background-color: #901454;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.movingMessage {
+  display: inline-block;
+  animation: scrollMessage 50s linear infinite;
+}
+
+@keyframes scrollMessage {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .carouselImage {
+    height: auto;
+    object-fit: contain;
+  }
+  .newArrivalsClothes > .newArrivalEachDiv {
+    width: 150px;
+    padding-bottom: 8px;
+  }
+  .newArrivalEachDiv .newClotheImgDiv {
+    height: 200px;
+  }
+  .newArrivalEachDiv .newClotheInfoDiv {
+    padding: 0 3px;
+    padding-top: 5px;
+  }
+  .newArrivalEachDiv .newClotheInfoDiv > .newClotheTitle {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .newArrivalEachDiv .newClotheInfoDiv > .newClothePrice {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .newArrivalEachDiv .newClotheInfoDiv > .newClothePrice > span {
+    font-size: 11px;
+    color: rgb(157, 155, 155);
+  }
+  .movingMessageDiv {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+  .movingMessage {
+    display: inline-block;
+    animation: scrollMessage 15s linear infinite;
+  }
+}

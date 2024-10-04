@@ -1,0 +1,528 @@
+#productDetailContainer {
+  width: 98%;
+  margin: auto;
+}
+#productDataInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  padding: 10px;
+}
+#productDataInfo > .productImages {
+  width: 55%;
+  height: 100%;
+}
+.carousel * {
+  width: 65%;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-root .carousel .control-dots .dot {
+  background-color: #901454;
+}
+.carousel .thumb {
+  width: 100%;
+}
+.carousel.carousel-slider .control-arrow {
+  background-color: #901454;
+}
+#productDataInfo > .productInfo {
+  width: 45%;
+  padding: 20px 0;
+}
+.add_To_Cart_Btn {
+  width: 65%;
+  height: 45px;
+  margin-top: 25px;
+  font-size: 18px;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-color: #901454;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+.add_To_Cart_Btn:hover {
+  background-color: transparent;
+  color: black;
+  outline: 2px solid #720f42;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.divider {
+  width: 65%;
+  height: 5px;
+  background-color: rgb(235, 235, 235);
+  margin-top: 20px;
+}
+.productDetailMainDiv,
+.productDescriptionMainDiv {
+  width: 65%;
+}
+.productDetailMainDiv > h3,
+.productDescriptionMainDiv > h3,
+.returnandrefundpolicyinfo > h3 {
+  font-weight: lighter;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.productDescriptionMainDiv > h3 > p {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.productDetailMainDiv > ul {
+  width: 100%;
+  list-style: none;
+}
+.productDetailMainDiv > ul > li {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+}
+.productDetailKey {
+  min-width: 130px;
+  font-size: 15px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.productDetailValue {
+  flex: 1;
+  font-size: 15px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+#selectColor {
+  width: 350px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 3px 3px -1px;
+}
+
+.custom-select {
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  font-size: 14px;
+  color: #000;
+}
+
+.select-button {
+  width: 100%;
+  font-size: 15px;
+  background-color: #fff;
+  padding: 0.675em 1em;
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid #dfdfdf;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-value {
+  text-align: left;
+}
+
+.arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #000;
+  transition: transform ease-in-out 0.3s;
+}
+
+.select-dropdown {
+  position: absolute;
+  list-style: none;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  padding: 5px;
+  overflow-y: auto;
+  transition: 0.5s ease;
+  transform: scaleY(0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.select-dropdown:focus-within {
+  box-shadow: 0 10px 25px rgba(94, 108, 233, 0.6);
+}
+
+.select-dropdown li {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.select-dropdown li label {
+  width: 100%;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.select-dropdown li:hover,
+.select-dropdown input:checked ~ label {
+  background-color: #f2f2f2;
+}
+
+.select-dropdown input:focus ~ label {
+  background-color: #dfdfdf;
+}
+
+.select-dropdown input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+/* interactivity */
+
+.custom-select.active .arrow {
+  transform: rotate(180deg);
+}
+
+.custom-select.active .select-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Full viewport height */
+}
+
+.quantity-low,
+.quantity-out-of-stock {
+  color: red;
+  font-weight: bold;
+}
+
+.quantity-medium {
+  color: #fe9e00;
+  font-weight: bold;
+}
+
+.quantity-high {
+  color: green;
+  font-weight: bold;
+}
+
+.returnandrefundpolicyinfo {
+  width: 65%;
+  padding-bottom: 20px;
+}
+
+.returnandrefundpolicyinfo > ul {
+  padding-left: 20px;
+}
+
+.returnandrefundpolicyinfo > ul > li {
+  font-size: 15px;
+  color: black;
+  margin-top: 7px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#productReviewMain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#productReviewMain > .productReviewLeft {
+  width: 30%;
+}
+#productReviewMain > .productReviewLeft > .productStarRating {
+  width: 100%;
+}
+#productReviewMain > .productReviewLeft > .productStarRating .starAndText {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+#productReviewMain > .productReviewLeft > .productStarRating .starAndText > p {
+  font-size: 18px;
+  margin-left: 10px;
+}
+#productReviewMain > .productReviewLeft > .productStarRating > h3 {
+  font-weight: lighter;
+}
+#productReviewMain > .productReviewLeft > .productReviewFormLink {
+  width: 100%;
+  margin-top: 30px;
+}
+#productReviewMain > .productReviewLeft > .productReviewFormLink > h3 {
+  font-weight: lighter;
+}
+#productReviewMain > .productReviewLeft > .productReviewFormLink > p {
+  margin: 12px 0;
+  font-size: 14px;
+}
+#productReviewMain > .productReviewLeft > .productReviewFormLink > button {
+  width: 65%;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #901454;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+#productReviewMain
+  > .productReviewLeft
+  > .productReviewFormLink
+  > button:hover {
+  background-color: transparent;
+  color: black;
+  outline: 2px solid #720f42;
+  transition: 0.3s ease-in-out;
+}
+
+#productReviewMain > .productReviewRight {
+  width: 65%;
+  min-height: 45vh;
+}
+#productReviewMain > .productReviewRight > h2 {
+  font-weight: lighter;
+}
+
+#productReviewMain > .productReviewRight .productReviewsMainDiv {
+  width: 100%;
+}
+#productReviewMain
+  > .productReviewRight
+  .productReviewsMainDiv
+  > .productReviewsByPeople {
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 10px;
+}
+#productReviewMain
+  > .productReviewRight
+  .productReviewsMainDiv
+  > .productReviewsByPeople:hover {
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+#productReviewMain
+  > .productReviewRight
+  .productReviewsMainDiv
+  > .productReviewsByPeople
+  > .productReviewsByPeopleTop {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#productReviewMain
+  > .productReviewRight
+  .productReviewsMainDiv
+  > .productReviewsByPeople
+  > .productReviewsByPeopleTop
+  > img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+#productReviewMain
+  > .productReviewRight
+  .productReviewsMainDiv
+  > .productReviewsByPeople
+  > .productReviewsByPeopleTop
+  > h4 {
+  font-size: 15px;
+}
+#productReviewMain
+  > .productReviewRight
+  .productReviewsMainDiv
+  > .productReviewsByPeople
+  > .reviewDate {
+  color: rgb(56, 56, 56);
+  font-size: 14px;
+  margin: 5px 0;
+}
+#productReviewMain
+  > .productReviewRight
+  .productReviewsMainDiv
+  > .productReviewsByPeople
+  > .commentMessage {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+#productReviewMain
+  > .productReviewRight
+  .productReviewsMainDiv
+  > .productReviewsByPeople
+  > .productRatingAndHeadline {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+#productReviewMain
+  > .productReviewRight
+  .productReviewsMainDiv
+  > .productReviewsByPeople
+  > .productRatingAndHeadline
+  > p {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  #productDataInfo {
+    width: 98%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #productDataInfo > .productImages {
+    width: 100%;
+  }
+  .carousel * {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+  #productDataInfo > .productInfo {
+    width: 100%;
+  }
+  .add_To_Cart_Btn {
+    width: 98%;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .custom-select {
+    position: relative;
+    width: 98%;
+  }
+  .select-button {
+    color: black;
+  }
+
+  .divider {
+    width: 100%;
+    height: 3px;
+  }
+  .productDetailMainDiv,
+  .productDescriptionMainDiv {
+    width: 100%;
+  }
+  .productDetailMainDiv > ul > li {
+    margin-bottom: 10px;
+  }
+  .productDetailKey {
+    min-width: 130px;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+
+  .productDetailValue {
+    flex: 1;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+
+  /* =========================== */
+  #productReviewMain {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #productReviewMain > .productReviewLeft {
+    width: 100%;
+  }
+  #productReviewMain > .productReviewLeft > .productReviewFormLink > button {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #productReviewMain > .productReviewRight {
+    width: 100%;
+    min-height: 30vh;
+  }
+  #productReviewMain > .productReviewRight > h2 {
+    font-weight: lighter;
+  }
+  #productReviewMain
+    > .productReviewRight
+    .productReviewsMainDiv
+    > .productReviewsByPeople {
+    width: 100%;
+  }
+  #productReviewMain
+    > .productReviewRight
+    .productReviewsMainDiv
+    > .productReviewsByPeople
+    > .productReviewsByPeopleTop
+    > img {
+    width: 38px;
+    height: 38px;
+  }
+  #productReviewMain
+    > .productReviewRight
+    .productReviewsMainDiv
+    > .productReviewsByPeople
+    > .productReviewsByPeopleTop
+    > h4 {
+    font-size: 14px;
+  }
+  #productReviewMain
+    > .productReviewRight
+    .productReviewsMainDiv
+    > .productReviewsByPeople
+    > .reviewDate {
+    font-size: 13px;
+  }
+  #productReviewMain
+    > .productReviewRight
+    .productReviewsMainDiv
+    > .productReviewsByPeople
+    > .commentMessage {
+    font-size: 14px;
+  }
+  #productReviewMain
+    > .productReviewRight
+    .productReviewsMainDiv
+    > .productReviewsByPeople
+    > .productRatingAndHeadline
+    > p {
+    font-size: 14px;
+  }
+  .returnandrefundpolicyinfo {
+    width: 100%;
+  }
+}

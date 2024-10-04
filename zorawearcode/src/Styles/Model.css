@@ -1,0 +1,214 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    margin-bottom: 80px;
+    cursor: default;
+}
+@media screen and (max-width: 768px){
+    .modal-header>h4{
+        width: 100%;
+    }
+    .modal-content {
+        background: white;
+        border-radius: 5px;
+        padding: 20px;
+        width: 300px;
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        margin-bottom: 80px;
+    } 
+    .signInForm>.signUpSecond{
+        width: 97%;
+        /* margin-left: -50px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid grey;
+        border-radius: 8px;
+        padding: 0px 0px;
+        margin: 0px;
+        gap: 1px;
+        cursor: pointer;
+        white-space: 'nowrap'
+    }  
+    #showElement{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        gap: 30px;
+    }
+    .modal-content>.modal-body {
+       
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        padding: 0px;
+        height: 300px;
+        padding-top: 20px;
+        overflow-y: scroll;
+    }
+}
+.modal-content {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.modal-header {
+    display: flex;
+    padding: 10px;
+}
+.modal-header>h4{
+    font-size: 18px;
+}
+.modal-body {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 350px;
+    height: 300px;
+    overflow-y: scroll;
+}
+.modal-title{
+    font-size: 22px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.button {
+    cursor: pointer;
+}
+#toggleButton{
+    background-color: #fff;
+    border: 0px solid #fff;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+               /*----------------    Apna CSS ------------------------------------ */
+#showElement{
+    display: flex;
+    gap: 30px;
+}
+#showElement{
+    cursor: pointer;
+}
+
+.signInForm{
+    width: 90%;
+    margin: auto;
+}
+.signInForm>input{
+    box-shadow:
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 96%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+.signInForm>div>input{
+    box-shadow:
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 96%;
+    padding: 10px 10px;
+    margin: 10px 10px;   
+}
+.signInForm>button{
+    border-radius: 5px;
+    width: 96%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border: none;
+    background-color: #901454;
+    color: #eee;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.signInForm > button:hover{
+    background-color: transparent;
+    border: 2px solid #720f42;
+    color: #901454;
+}
+.signInForm>.signUpSecond{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 10px 10px;
+    margin: 10px;
+    gap: 15px;
+    cursor: pointer;
+}
+.signInForm>.signUpSecond:hover{
+    background-color: rgb(219, 219, 219);
+}
+.signInForm>.signUpSecond>p{
+    margin-top: 2px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+#check{
+    display: flex;
+    width: 94%;
+    margin: auto;
+    gap: 10px;
+    cursor: pointer;
+}
+#check>p{
+    color: black;
+    margin: 10px;
+    text-decoration: underline;
+}
+.signInForm>p{
+    text-align: center;
+    font-weight: bolder;
+}
+/* Styling the scrollbar track */
+::-webkit-scrollbar {
+    width: 7px; /* Adjust scrollbar width */
+    height: 7px; /* Needed for horizontal scrollbars */
+}
+
+/* Styling the track (part the thumb slides within) */
+::-webkit-scrollbar-track {
+    background: #fff; /* Solid color or gradient */
+    border-radius: 6px;
+}
+
+/* Styling the thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #666, #414040); /* Dark gradient */
+    border-radius: 6px;
+}
+
+/* Styling the thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #555, #222);
+}

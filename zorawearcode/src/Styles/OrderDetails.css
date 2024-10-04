@@ -1,0 +1,208 @@
+.rOrder-details-main{
+    width: 98%;
+    margin: auto;
+}
+.rOrder-details-main-first{
+    display: flex;
+     width: 87%;
+     margin: auto;
+     height: 100px;
+     column-gap: 15px;
+}
+.rOrder-details-main-first>p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     width: 60%;
+     height: 100px;
+}
+.rOrder-details-main-first>img{
+        object-fit: cover;
+        width: 30%;
+        height: 100px;
+        object-position: top;
+}
+.rOrder-details-main-sec{
+    border-bottom: 1px solid rgb(197, 192, 192);
+    border-top: 1px solid rgb(202, 198, 198);
+    width: 94%;
+    display: flex;
+    margin: auto;
+    padding: 10px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.dOrder-details-border{
+    border: 2px solid rgb(197, 193, 193);
+}
+.rOrder-details-main-third{
+    margin: 15px;
+}
+.rOrder-details-main-third>div{ 
+    border-bottom: 1px solid rgb(197, 192, 192);
+    border-top: 1px solid rgb(202, 198, 198);
+    width: 98%;
+    display: flex;
+    /* margin: auto; */
+    padding: 10px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.rOrder-details-main-third .mobRorder{
+    border-bottom: 1px solid rgb(197, 192, 192);
+    border-top: 1px solid rgb(202, 198, 198);
+    width: 98%;
+    display: flex;
+    /* margin: auto; */
+    padding: 10px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+/* -------------------------------Order--Details--CSS--------------------------------- */
+
+.pOrder-details-main{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+.pOrder-details-main-first{
+     width: 100%;
+     margin: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-bottom: 15px;
+}
+.porder-firstchild{
+    display: flex;
+}
+.pOrder-details-main-section{
+    border: 1px solid gray;
+    border-radius: 10px;
+   width: 100%; 
+   margin: auto;
+   padding: 15px;
+   display: flex;
+   gap: 30px;
+}
+.ph2{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.pfirst-section{
+width: 30%;
+}
+.psecond-section{
+width: 30%;
+}
+.pthird-section{
+width: 30%;
+}
+.span2{
+    border-left: 2px solid gray;
+    margin: 0px 5px;
+}
+.u2>div{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+@media screen and (max-width:768px){
+    .pOrder-f{
+        width: 91%;
+        font-size: 25px;
+        font-weight: bold;
+        margin: auto;
+    }
+    .pOrder-details-main{
+        border: none;
+        width: 97%;
+        margin: auto;
+        padding: 0px;
+    }
+    .pOrder-first-first{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3px;
+        border: 1px solid rgb(122, 119, 119);
+        padding: 10px 20px;
+        border-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+   .pOrder-first-first>div{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+   }
+   .lPOrder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(122, 119, 119);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+   }
+    .nBorder{
+        border: 1px solid rgb(122, 119, 119);
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    .u2{
+        width: 100%;
+        border: 1px solid rgb(125, 122, 122);
+        padding: 10px 20px; 
+        border-radius: 10px;   
+    }
+    .u2>div{
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    .pOrder-details-main-first{
+         width: 90%;
+         display: flex;
+         margin-bottom: 15px;
+         flex-direction: column;
+    }
+    .span2{
+        border-left: none;
+    }
+    .porder-firstchild{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .pOrder-details-main-section{
+        border: none;
+       width: 100%; 
+       margin: auto;
+       display: flex;
+       gap: 30px;
+       flex-direction: column;
+    }
+    .ph2{
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .pfirst-section{
+    width: 100%;
+    }
+    .psecond-section{
+    width: 100%;
+    }
+    .pthird-section{
+    width: 100%;
+    } 
+}

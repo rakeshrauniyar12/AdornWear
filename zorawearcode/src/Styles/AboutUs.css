@@ -1,0 +1,25 @@
+.aboutuscontainer{
+    width: 60%;
+    margin: auto;
+}
+.aboutuscontainer > h1{
+    margin-bottom: 20px;
+}
+.aboutuscontainer > h3{
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+.aboutuscontainer > p{
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutuscontainer{
+        width: 100%;
+        padding: 0 10px;
+    }
+}

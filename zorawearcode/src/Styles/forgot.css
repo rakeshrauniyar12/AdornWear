@@ -1,0 +1,30 @@
+.forgot-cont{
+    width:30%;
+    margin:auto;
+    margin-top:30px;
+    padding:10px 10px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.forgot-input{
+           width:98%;
+       padding:10px 4px;
+}
+
+.forgot-btn{
+    width:98%;
+    padding:10px 10px;
+    font-size:18px;
+  background-color:#901454;
+  color:#ffff;
+  cursor:pointer;
+  border:none;
+  border-radius:5px;
+}
+
+@media screen and (max-width: 768px){
+   .forgot-cont{
+    width: 98%;
+   }
+}

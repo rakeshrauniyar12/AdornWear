@@ -1,0 +1,11 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-rating svg {
+    color: #ffc107; /* Gold color for stars */
+    margin-right: 2px;
+    font-size: 22px;
+  }
+  

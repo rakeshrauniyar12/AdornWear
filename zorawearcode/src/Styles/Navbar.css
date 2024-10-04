@@ -1,0 +1,183 @@
+.scrolling-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 10px 0;
+  }
+  .scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    display: inline-block;
+    width: 65px;
+    height: auto;
+    margin: 0 5px; 
+    text-align: center; 
+    vertical-align: top;
+  }
+  
+  .card-image {
+    width: 60px; 
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .card-title {
+    margin: 2px 0;
+    font-size: 11px;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .deliveryMainDiv{
+    width: 100%;
+    background-color: #901454;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+  }
+  .deliveryMainDiv  .deliveryDesignDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .deliveryMainDiv .deliveryDesignDiv  .deliveryDesign{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .deliveryMainDiv .deliveryDesignDiv  .deliveryDesign > img{
+    width: 20px;
+    margin-right: 10px;
+  }
+  .deliveryMainDiv .deliveryDesignDiv  .deliveryDesign > h3{
+    font-weight: lighter;
+    font-size: 15px;
+    color: white;
+  }
+  .accessoriesItemsHover{
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  .accessoriesItemsHover:hover{
+    background-color: #720f42;
+    color:white;
+  }
+  .loggedOutOptionHover{
+    color: red;
+    text-align: center;
+  }
+  .loggedOutOptionHover:hover{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+  }
+  .loggedInOptionHover{
+    text-align: center;
+  }
+  .loggedInOptionHover:hover{
+    background-color: #f6f6f6;
+    border-radius: 4px;
+  }
+  .userWhenLoggedIn:hover{
+    background-color: rgb(242, 242, 242);
+  }
+  #gotoyouraccounttext{
+    font-size: 11px;
+    background-color: rgb(116, 116, 116);
+    color: white;
+    padding: 8px;
+    position: absolute;
+    border-radius: 4px;
+    right: 3%;
+    top: 100%;
+  }
+
+  .searchRenderProducts{
+    width: 250px;
+    max-height: 300px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    top: 82px;
+    margin-left: -8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .searchRenderProducts .searchProductDiv{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding: 2px 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+  }
+
+  .searchRenderProducts .searchProductDiv:hover{
+    background-color: #f6f6f6;
+  }
+
+  .searchRenderProducts .searchProductDiv .searchProductImage{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .searchRenderProducts .searchProductDiv .searchProductImage > img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .searchRenderProducts .searchProductDiv .searchProductInfo{
+    width: 78%;
+    height: 100%;
+  }
+
+  .searchRenderProducts .searchProductDiv .searchProductInfo > p{
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .deliveryMainDiv{
+      padding: 8px 5px;
+    }
+    .deliveryMainDiv  .deliveryDesignDiv{
+      width: 100%;
+    }
+    .deliveryMainDiv .deliveryDesignDiv  .deliveryDesign{
+      margin-right: 5px;
+    }
+    .deliveryMainDiv .deliveryDesignDiv  .deliveryDesign > img{
+      width: 15px;
+      margin-right: 5px;
+    }
+    .deliveryMainDiv .deliveryDesignDiv  .deliveryDesign > h3{
+      font-size: 11px;
+    }
+    .searchRenderProducts{
+      width: 94%;
+      max-height: 300px;
+      top: 135px;
+      margin-left: -10px;
+    }
+    .searchRenderProducts .searchProductDiv{
+      height: 80px;
+    }
+    .searchRenderProducts .searchProductDiv .searchProductInfo > p{
+      font-size: 13px;
+    }
+  }
+  

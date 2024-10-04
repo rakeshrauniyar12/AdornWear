@@ -1,0 +1,78 @@
+<div id="productDiv">
+          {filteredProducts.length === 0 ? (
+            <div className="noproductfoundtextdiv">
+              <h2>No products found!</h2>
+            </div>
+          ) : (
+            filteredProducts.map((product, index) => (
+              <div key={index} className="product">
+                <Link to={`${product.$id}`}>
+                  <div className="productImgDiv">
+                    <img
+                      src={product.productImages[0]}
+                      alt={product.productName}
+                    />
+                    {/* {product.newarrivals ? (
+                      <p className="newArrivalTag">New Arrivals</p>
+                    ) : null} */}
+                    </div>
+                    <div className="productInfoDiv">
+                      <p className="productBrand">{product.productBrand}</p>
+                      <p className="productTitle">{product.productName}</p>
+                      <h2>
+                        {`₹${Math.round(product.productSalePrice * 0.95)}`}
+                        <span style={{ fontSize: "15px", marginLeft: "5px" }}>
+                          <s>{`₹${product.productSalePrice}`}</s>
+                        </span>
+                      </h2>
+                      <p className="freedeliverytext">Free Delivery</p>
+                      <div className="productRating">
+                        <p className="productRatingText">
+                          {product.productRating || 0}
+                          <span className="fa fa-star checked"></span>
+                        </p>
+                        <p className="productReviewsText">
+                          {product.productReviews || 0} <span>Reviews</span>
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              ))
+            )}
+          </div>
+
+
+          =======================================================================
+
+           <Link to={`${product.$id}`}>
+                  <div className="productImgDiv">
+                    <img
+                      src={product.productImages[0]}
+                      alt={product.productName}
+                    />
+                    {/* {product.newarrivals ? (
+                      <p className="newArrivalTag">New Arrivals</p>
+                    ) : null} */}
+                  </div>
+                  <div className="productInfoDiv">
+                    <p className="productBrand">{product.productBrand}</p>
+                    <p className="productTitle">{product.productName}</p>
+                    <h2>
+                      {`₹${Math.round(product.productSalePrice * 0.95)}`}
+                      <span style={{ fontSize: "15px", marginLeft: "5px" }}>
+                        <s>{`₹${product.productSalePrice}`}</s>
+                      </span>
+                    </h2>
+                    <p className="freedeliverytext">Free Delivery</p>
+                    <div className="productRating">
+                      <p className="productRatingText">
+                        {product.productRating || 0}
+                        <span className="fa fa-star checked"></span>
+                      </p>
+                      <p className="productReviewsText">
+                        {product.productReviews || 0} <span>Reviews</span>
+                      </p>
+                    </div>
+                  </div>
+                </Link>
